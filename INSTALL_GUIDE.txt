@@ -1,0 +1,88 @@
+========================================
+Python 安裝指南
+========================================
+
+錯誤訊息：Python was not found
+原因：系統找不到 Python 或 Python 未加入 PATH
+
+========================================
+解決方法
+========================================
+
+方法 1: 安裝 Python (推薦)
+--------------------------
+1. 前往 https://www.python.org/downloads/
+2. 下載 Python 3.10 或更新版本
+3. 執行安裝程式
+
+   **重要**:
+   在安裝時務必勾選 "Add Python to PATH" 選項！
+   這個選項通常在安裝程式的第一個畫面底部
+
+4. 安裝完成後，重新啟動命令提示字元
+5. 執行 0_check_python.bat 確認安裝成功
+
+
+方法 2: 檢查現有 Python (如果已安裝)
+-----------------------------------
+如果你已經安裝了 Python：
+
+1. 搜尋 "環境變數" 或 "Environment Variables"
+2. 點擊 "編輯系統環境變數"
+3. 點擊 "環境變數" 按鈕
+4. 在 "系統變數" 或 "使用者變數" 中找到 "Path"
+5. 檢查是否包含 Python 路徑，例如：
+   C:\Python310\
+   C:\Python310\Scripts\
+   C:\Users\YourName\AppData\Local\Programs\Python\Python310\
+
+6. 如果沒有，點擊 "新增" 並加入 Python 安裝路徑
+7. 重新啟動命令提示字元
+
+
+方法 3: 使用 Microsoft Store 安裝 (Windows 10/11)
+-------------------------------------------------
+1. 開啟 Microsoft Store
+2. 搜尋 "Python"
+3. 安裝 Python 3.10 或更新版本
+4. 安裝完成後會自動加入 PATH
+
+
+方法 4: 使用完整路徑執行 (臨時方案)
+----------------------------------
+如果 Python 已安裝但不在 PATH 中：
+
+1. 找到 Python 安裝位置，例如：
+   C:\Python310\python.exe
+   或
+   C:\Users\YourName\AppData\Local\Programs\Python\Python310\python.exe
+
+2. 編輯批次檔，將 "python" 改為完整路徑
+   例如：將
+   python download_model.py
+   改為
+   C:\Python310\python.exe download_model.py
+
+========================================
+確認安裝成功
+========================================
+
+執行以下命令確認：
+1. 雙擊 0_check_python.bat
+   或
+2. 開啟命令提示字元，輸入：
+   python --version
+
+如果顯示版本號（如 Python 3.10.x），表示安裝成功！
+
+========================================
+安裝順序
+========================================
+
+完成 Python 安裝後，按順序執行：
+0. 0_check_python.bat  (檢查 Python)
+1. 1_install.bat       (安裝套件)
+2. 2_download_model.bat (下載模型)
+3. 3_run_app.bat       (啟動程式)
+
+========================================

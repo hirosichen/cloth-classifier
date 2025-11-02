@@ -1,0 +1,29 @@
+# 排除模型文件夾
+qwen3_vl_model/
+
+# 排除虛擬環境
+venv_wsl/
+venv/
+env/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+nul

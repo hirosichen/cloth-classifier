@@ -1,0 +1,110 @@
+========================================
+快速啟動指南
+========================================
+
+遇到 "Python was not found" 錯誤？
+請閱讀 INSTALL_GUIDE.txt 取得詳細說明
+
+========================================
+方法 A: 使用批次檔 (.bat) - 推薦
+========================================
+
+步驟 0: 檢查 Python
+   執行: 0_check_python.bat
+   如果顯示錯誤，請先安裝 Python
+
+步驟 1: 安裝套件
+   執行: 1_install.bat
+
+步驟 2: 下載模型 (約 16GB，僅需執行一次)
+   執行: 2_download_model.bat
+
+步驟 3: 啟動程式
+   執行: 3_run_app.bat
+
+
+========================================
+方法 B: 使用 PowerShell (.ps1) - 替代方案
+========================================
+
+如果批次檔無法找到 Python，使用 PowerShell：
+
+1. 在此資料夾按住 Shift + 右鍵
+2. 選擇 "在此處開啟 PowerShell 視窗"
+3. 依序執行：
+
+   步驟 1: 安裝套件
+   .\alternative_install.ps1
+
+   步驟 2: 下載模型
+   .\alternative_download.ps1
+
+   步驟 3: 啟動程式
+   .\alternative_run.ps1
+
+注意：如果出現執行原則錯誤，請以管理員身份執行：
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+
+========================================
+安裝 Python
+========================================
+
+如果還沒安裝 Python：
+
+選項 1: 官方網站
+1. 前往 https://www.python.org/downloads/
+2. 下載 Python 3.10 或更新版本
+3. 安裝時務必勾選 "Add Python to PATH"
+
+選項 2: Microsoft Store (Windows 10/11)
+1. 開啟 Microsoft Store
+2. 搜尋 "Python 3.10"
+3. 點擊安裝
+
+
+========================================
+系統需求
+========================================
+
+- Python 3.8 或更新版本
+- NVIDIA GPU (建議 16GB+ VRAM)
+- 40GB 可用磁碟空間
+- 網路連線 (下載模型時)
+
+
+========================================
+檔案列表
+========================================
+
+批次檔 (.bat):
+- 0_check_python.bat      # 檢查 Python 安裝
+- 1_install.bat           # 安裝套件
+- 2_download_model.bat    # 下載模型
+- 3_run_app.bat          # 啟動程式
+
+PowerShell 腳本 (.ps1):
+- alternative_install.ps1  # 安裝套件 (替代)
+- alternative_download.ps1 # 下載模型 (替代)
+- alternative_run.ps1     # 啟動程式 (替代)
+
+說明文件:
+- START_HERE.txt         # 本檔案
+- INSTALL_GUIDE.txt      # 詳細安裝指南
+- README.txt            # 完整說明文件
+
+程式檔案:
+- app.py                # 主程式
+- download_model.py     # 模型下載腳本
+- requirements.txt      # 套件清單
+
+
+========================================
+需要協助？
+========================================
+
+1. 先閱讀 INSTALL_GUIDE.txt
+2. 執行 0_check_python.bat 檢查 Python
+3. 如果批次檔不工作，改用 PowerShell 腳本
+
+========================================
